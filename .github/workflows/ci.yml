@@ -18,6 +18,6 @@ jobs:
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
-        ACTIONS_TEST: ${{ secrets.ACTIONS_TEST }}
+        ACCESS_TOKEN: ${{ secrets.ACTIONS_TEST }}
         BRANCH: gh-pages
         FOLDER: build
